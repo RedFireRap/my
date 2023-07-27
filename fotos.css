@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 20px;
+    transition: .5s;
+    font-family: 'Kdam Thmor Pro' sans-serif;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+nav {
+    width: 60%;
+}
+
+#simbolo{
+    width: 13%;
+}
+
+#simbolo-fundo {
+    width: 13%;
+}
+
+.atores-cards-container {
+    width: 100%;
+    height: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cards-content {
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: space-around;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.cards {
+    width: 90%;
+    height: 600px;
+    background-size: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    margin: 10px;
+    margin-left: 20px;
+    display: flex;
+    padding: 0 0 15px 10px;
+    color: #fff;
+}
+
+.footer-nav {
+    display: none;
+}
+
+li:hover {
+    color: #d21617;
+}
+
+.cards:hover {
+    transform: scale(1.02);
+}
+
+.baner-1 {
+    background-image: url('https://br.web.img3.acsta.net/pictures/22/03/02/19/26/3666027.jpg');
+    background-position: center;
+}
+
+
+.baner-2 {
+    background-image: url('https://img.olhardigital.com.br/wp-content/uploads/2022/02/Charada-em-The-Batman.jpg');
+    
+}
+
+.baner-3 {
+    background-image: url('https://f5online.com.br/wp-content/uploads/2022/03/zoe_kravitz_-_batman_5.webp');
+    background-position: center;
+}
+
+.baner-4 {
+    background-image: url('https://w0.peakpx.com/wallpaper/977/691/HD-wallpaper-batman-the-batman-alfred-pennyworth-andy-serkis.jpg');
+    background-position: center;
+}
+
+.baner-5 {
+    background-image: url('https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2022/01/batman-robert-pattinson-2022.jpg?w=1200&h=675&crop=1');
+    background-position: center;
+}
+
+.baner-6{
+background-image: url('https://2.bp.blogspot.com/-N9DtMsBCAwI/XbtdLT8foBI/AAAAAAACzVU/bTyfrBq-ApwVG8DUfRmWYVlvKyzXJ-08wCK4BGAYYCw/s1600/jeffreywrights.jpg');
+background-position: center;
+}
+
+footer {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 20px;
+    color: white;
+    line-height: 1px;
+}
+
+@media (max-width:420px) {
+    /* topo */
+    nav {
+        display: none;
+    }
+
+    header {
+        margin-left: 150px;
+        height: 80px;
+    }     
+
+    #simbolo {
+        width: 200px;
+        margin-right: 250px;
+    }
+    
+    #simbolo-fundo {
+        width: 200px;
+        align-items: center;
+    }
+
+    .footer-nav {
+        display: flex;
+        align-items: center;
+        line-height: 15px;
+    }
+
+    .ul-fundo {
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .li-fundo {
+        font-size: 30px;
+        line-height: normal;
+    }
+
+    .atores-cards-container {
+        display: flex;
+        align-items: center;        
+    }
+
+    .cards-content {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .span {
+        font-size: 25px;
+        line-height: 25px;
+    }
+}
+
+/* orientation */
+@media (max-width:899px){
+    .cards-content {
+        width: 100%;
+    }
+
+    .cards {
+        height: 300px;
+        background-size: cover;
+
+    }
+    /* fundo */
+    #simbolo-fundo {
+        width: 150px;
+    }
+
+    .span {
+        line-height: 20px;
+        height: 30px;
+        font-size: 25px;
+    }
+
+}
+
+

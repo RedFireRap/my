@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    background-color: black;
+}
+
+header {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+nav {
+    width: 80%
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+li:hover {
+    color: #d21617;
+
+}
+
+.Simbolu {
+    width: 150px;
+}
+
+.Simbolu-fundo {
+    width: 150px;
+    align-items: flex-end;
+    justify-content: end;
+}
+
+.container-pai {
+    width: 100%;    
+}
+
+.fotos {
+    width: 100%;
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.atores:hover {
+    transform: scale(1.02);
+}
+
+.atores {
+    width: 350px;
+    height: 195px;
+    margin: 5px;
+}
+
+#posticao {
+    background-position: center;
+}
+
+.texto {
+    width: 350px;
+    height: 200px;
+    display: grid;
+    align-items: center;
+    color: white;
+    cursor:auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p {
+    width: 267.5px;
+    color: #fff;
+    border-bottom: 5px solid #d21617;
+}
+
+footer {
+    height: 170px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 20px;
+    color: white;
+    line-height: 12%;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    height: 110px;
+}
+
+span {
+    line-height: 10px;
+    margin-top: 10px;
+}
+
+@media (max-width:420px) {
+    .footer-navigation {
+        display: block;
+        margin: 40px;
+        align-items: center;
+    }
+
+    nav {
+        display: none;
+    }    
+
+    p {
+        border-bottom: none;
+    }
+
+    .todas-fotos {
+        align-items: center;
+        width: 100%;
+    }
+
+    .fotos {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;     
+    }
+
+    .atores {
+        width: 90%;
+        height: 50%;
+        margin: 10px;
+    }
+
+    .texto {
+       font-size: 20px;
+       width: 400px;
+       height: 200px;
+       margin: 15px;
+    }
+
+    .Simbolu-fundo {
+        display: flex;
+        margin-top: 370px;
+    }
+
+    .footer-list {
+        display: flex;
+        align-items: center;
+        margin-top: 150px;
+    }
+
+    .li-fundo {
+        display: flex;
+        font-size: 40px; 
+        line-height: 50px;      
+    }
+
+    .rodape {
+        width: 350px;
+        line-height: 25px;
+        font-size: 30px;
+        margin: 10px;        
+    }
+}
